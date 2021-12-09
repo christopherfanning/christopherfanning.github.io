@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-template-rows: 3rem 90vh 3rem;
+  grid-template-columns: 1fr;
+}
+
+header {
+  background-color: cornflowerblue;
+}
+
+main {
+  background-color: slateblue;
+  /* make this a scroll box */
+  overflow: scroll;
+  overflow-x: hidden;
+
+}
+
+.contentBox {
+  height: 300px;
+  width: 300px;
+  background-color: darkgoldenrod;
+  border: 2px black solid;
+}
+
+footer {
+  background-color: blueviolet;
+}
