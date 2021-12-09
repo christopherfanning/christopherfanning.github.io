@@ -2,15 +2,229 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christopher Fanning - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christopher Fanning - Just another dude.</title>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" -->
+  <!-- integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/font-awesome/css/all.css" />
+  <!-- <link rel="stylesheet" href="./assets/font-awesome/css/fontawesome.min.css"> -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="./script.js"></script>
+
+  <!-- TODO Figure out angular-->
+  <!-- TODO Add Blog section -->
+  <!-- TODO Add images -->
+  <!-- TODO Create an overlay for existing data metrics. -->
+  <!-- TODO Create background for HERO section.  -->
+  <!-- TODO Make offsite links open in a new tab or new window. -->
+  <!-- TODO redundant links to social(GitHub, LinkedIn, etc) in about section -->
+  <!-- TODO Some kind of CTA on hero section. -->
+  <!-- TODO add flex or grid to all sections. Get rid of floats.  -->
+  <!-- TODO Set up glitch animation on header -->
+  <!-- TODO Add together clips for glitchy background. -->
+  <!-- TODO Javascript for animating sorting/filtering on projects. -->
+  <!-- TODO Maybe do the same thing for skills (Front-end, back-end, devops, etc) -->
+  <!-- TODO Add smooth scolling to sections when navigation is clicked. -->
+  <!-- TODO Project card images should take up the entire card, descriptions display on hover. -->
+  <!-- TODO Make Projects Grid responsive. -->
+  <!-- TODO Convert all TODO's to GitHub issues -->
 </head>
 
 <body>
+  <!-- ************** NAVBAR Section ******************** -->
 
+  <nav class="navbar">
+    <a href="#" class="logo">
+      <span>CF</span>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-item"><a class="grow" href="#about">about</a></li>
+      <li class="nav-item"><a class="grow" href="#projects">projects</a></li>
+
+      <li class="nav-item">
+        <a class="grow" href="https://github.com/christopherfanning"><i class="fab fa-github-alt"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="grow" href="https://www.linkedin.com/in/christopher-fanning-40605834/"><i
+            class="fab fa-linkedin"></i></a>
+      </li>
+      <li class="nav-item hamburger-icon">
+        <a class="grow" href="https://github.com/christopherfanning"><i class="fas fa-hamburger"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ************** HERO Section ******************** -->
+
+  <section id="hero">
+    <div class="hero-box">
+      <h1 class="main name">Christopher Fanning</h1>
+    </div>
+    <br />
+    <div class="round">
+      <img src="./assets/img/chris.jpg" alt="" />
+    </div>
+  </section>
+
+  <!-- ***************** -About Section- ************************************ -->
+
+  <section id="about">
+    <div class="about-heading">
+      <h1>AboutMe</h1>
+    </div>
+    <div class="about-image"></div>
+    <div class="about-description">
+      <p>I'm a regular person who likes to solve problems with code.</p>
+    </div>
+
+    <div class="skills-heading">
+      <h1>Skills</h1>
+    </div>
+
+    <div class="skills-container">
+
+
+      <article class="skill"><i class="skill-icon fab fa-android"></i></article>
+      <article class="skill"><i class="skill-icon fab fa-aws"></i></article>
+      <article class="skill"><i class="skill-icon fas fa-code"></i></article>
+      <article class="skill">
+        <i class="skill-icon fas fa-code-branch"></i>
+      </article>
+      <article class="skill">
+        <i class="skill-icon fab fa-css3-alt"></i>
+      </article>
+      <article class="skill"><i class="skill-icon fab fa-docker"></i></article>
+      <article class="skill">
+        <i class="skill-icon fab fa-google-play"></i>
+      </article>
+      <article class="skill"><i class="skill-icon fab fa-html5"></i></article>
+      <article class="skill"><i class="skill-icon fab fa-java"></i></article>
+      <article class="skill">
+        <i class="skill-icon fab fa-js-square"></i>
+      </article>
+      <article class="skill">
+        <i class="skill-icon fas fa-laptop-code"></i>
+      </article>
+      <article class="skill"><i class="skill-icon fab fa-linux"></i></article>
+      <article class="skill">
+        <i class="skill-icon fas fa-mobile-alt"></i>
+      </article>
+      <article class="skill"><i class="skill-icon fab fa-react"></i></article>
+      <article class="skill"><i class="skill-icon fas fa-brain"></i></article>
+      <article class="skill"></article>
+      <article class="skill"></article>
+      <article class="skill"></article>
+
+
+    </div>
+  </section>
+
+  <!-- ************** PROJECTS Section ******************** -->
+  <section id="projects">
+    <div class="banner">
+      <h1>Projects</h1>
+    </div>
+    <br />
+
+    <div class="projects">
+      <article class="project cell-project">
+        <div class="project-title">
+          <h2>Chicago Fire and EMS</h2>
+        </div>
+        <div class="project-image cell-mockup">
+          <a href="https://play.google.com/store/apps/details?id=com.jumpingcloud.cfd"><img
+              src="./assets/img/unnamed.webp" alt="" /></a>
+        </div>
+        <div class="project-description">
+          <div class="project-type">
+            <h4>Android Application</h4>
+          </div>
+          <p>
+            A quick reference database for Chicago Fire Department employees.
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-title">
+          <h2>TJC Legal</h2>
+        </div>
+        <div class="project-image website-mockup">
+          <a href="http://tjclegal.com/"><img src="./assets/img/tjclegal.png" alt="" /></a>
+        </div>
+        <div class="project-description">
+          <div class="project-type">
+            <h4>Website</h4>
+          </div>
+          <p>A website for a Chicago-based legal practice.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-title">
+          <h2>Jumping Cloud</h2>
+        </div>
+        <div class="project-image website-mockup">
+          <a href="https://jumpingcloud.com/"><img src="./assets/img/jumpingcloud.png" alt="" /></a>
+        </div>
+        <div class="project-description">
+          <div class="project-type">
+            <h4>Website</h4>
+          </div>
+          <p>A website for a game and app software company.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-title">
+          <h2>AAffordable Door</h2>
+        </div>
+        <div class="project-image website-mockup">
+          <a href="http://aaffordabledoor.com/"><img src="./assets/img/aaffordable.png" alt="" /></a>
+        </div>
+        <div class="project-description">
+          <div class="project-type">
+            <h4>Business Website</h4>
+          </div>
+          <p>A website for a Chicagoland garage door business.</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-title">
+          <h2>Made by Milkovic</h2>
+        </div>
+        <div class="project-image website-mockup">
+          <a href="http://madebymilkovic.com/"><img src="./assets/img/milkovic.png" alt="" /></a>
+        </div>
+        <div class="project-description">
+          <div class="project-type">
+            <h4>Hobby Website</h4>
+          </div>
+          <p>A personal website for a wood-working hobbyist.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ************** FOOTER Section ******************** -->
+  <footer>
+    <h4>I am the footer.</h4>
+  </footer>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
 </body>
 
 </html>
