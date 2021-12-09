@@ -99,7 +99,7 @@ Hero Section
 
 #hero {
   /* background-image: url(./assets/img/1euJ.gif); */
-  background-image: url(./assets/img/scaled.screen.gif);
+  /* background-image: url(./assets/img/scaled.screen.gif); */
   /* background-position: ; */
   background-size: cover;
   width: 100%;
@@ -199,8 +199,8 @@ About Section
 }
 
 .skill-icon {
-  color: darkgreen;
-  font-size: 2rem;
+  color: cornflowerblue;
+  font-size: 8rem;
 }
 
 .skill {

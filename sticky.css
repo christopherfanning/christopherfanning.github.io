@@ -1,6 +1,10 @@
+body {
+  margin: 0px;
+}
+
 .container {
   display: grid;
-  grid-template-rows: 3rem 90vh 3rem;
+  grid-template-rows: 5vh 90vh 5vh;
   grid-template-columns: 1fr;
 }
 
@@ -17,11 +21,33 @@ main {
 }
 
 .contentBox {
-  height: 300px;
+  min-height: 300px;
   width: 300px;
   background-color: darkgoldenrod;
   border: 2px black solid;
 }
+
+section {
+  width: 100vw;
+  min-height: 40vh;
+}
+
+#top {
+  background-color: darkolivegreen;
+}
+
+#middle {
+  background-color: lightcoral;
+}
+
+#about {
+  background-color: lightseagreen;
+}
+
+#projects {
+  background-color: thistle;
+}
+
 
 footer {
   background-color: blueviolet;
