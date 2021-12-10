@@ -1,0 +1,407 @@
+/* 
+======================
+Variables
+======================
+ */
+
+
+/* 
+======================
+Global Styles
+======================
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  /* background: black; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  /* color: bisque; */
+  text-decoration: none;
+}
+
+/* 
+======================
+Navigation Styles
+======================
+*/
+
+nav {
+  max-width: 100%;
+  background-color: rgb(54, 58, 54);
+  padding-left: 30px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+
+nav a {
+  color: white;
+}
+
+.logo {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  /* border: 2px solid green; */
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: white;
+}
+
+.nav-item:hover a {
+  color: darkgreen;
+}
+
+.logo img {
+  width: 175px;
+  vertical-align: middle;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+/* 
+======================
+Hero Section
+======================
+*/
+
+#hero {
+  /* background-image: url(./assets/img/1euJ.gif); */
+  /* background-image: url(./assets/img/scaled.screen.gif); */
+  /* background-position: ; */
+  background-size: cover;
+  width: 100%;
+  min-height: calc(100vh - 3rem);
+  background-color: rgb(82, 79, 79);
+  text-align: center;
+  /* padding: 3rem; */
+  /* padding: 0 2rem;
+  padding: 5rem; */
+  padding-top: 5rem;
+  font-weight: lighter;
+  box-sizing: border-box;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  color: orange;
+  font-weight: lighter;
+  margin: 4rem;
+}
+
+.hero-box {
+  display: inline-block;
+  /* box-sizing: border-box; */
+  background: rgb(47, 49, 47);
+  /* border-radius: 20%; */
+  box-shadow: 2px 2px 3px;
+  letter-spacing: 0.8em;
+  padding: 2rem;
+  /* color: red; */
+}
+
+.name:hover {
+  transform: scale(1.4);
+  color: red;
+}
+
+.main {
+  display: inline;
+  /* border: 1px dotted red; */
+  /* margin: 3rem; */
+  /* padding: 3rem; */
+
+  /* top: 50px; */
+}
+
+.round {
+  /* background-image: url(./assets/img/2015-07-12\ 17.20.53.jpg); */
+  /* background-size: cover; */
+  display: inline-block;
+  /* background-color: red; */
+  border: 3px dotted rgb(80, 97, 3);
+  border-radius: 20rem;
+  height: 15rem;
+  width: 15rem;
+  margin: 2rem;
+  /* background-image: ; */
+  /* object-fit: contain; */
+
+  border-image: fill;
+}
+
+.round img {
+  border-radius: 20rem;
+}
+
+
+#outer {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+/* 
+=============================
+About Section
+=============================
+*/
+
+#about {
+  background: gray;
+  min-height: 100vh;
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.skills-heading {
+  font-size: 3rem;
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.skill-icon {
+  color: cornflowerblue;
+  font-size: 8rem;
+}
+
+.skill {
+  box-sizing: border-box;
+}
+
+/* 
+=============================
+Projects Section
+=============================
+*/
+
+#projects {
+
+  /* min-height: 100%; */
+  background: rgb(116, 113, 113);
+
+  /* width: 100%; */
+  text-align: center;
+}
+
+.banner {
+  color: darkgreen;
+  margin: 2rem;
+  padding: 1rem 3rem;
+  font-size: 3rem;
+  display: inline-block;
+  background: black;
+  box-shadow: 2px 2px 3px black;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project {
+  /* min-height: 100px; */
+  color: rgb(95, 200, 100);
+  padding: 1.5rem 2rem;
+  /* border: 1rem; */
+  background: rgb(44, 43, 43);
+  box-shadow: 3px 3px 4px black;
+  /* display: inline-block; */
+  box-sizing: border-box;
+  margin: 1.5rem;
+  transition: 0.3s all;
+
+}
+
+.cell-project {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.project:hover {
+  background-color: #9b3;
+  transform: scale(1.02);
+  /* font-size: larger; */
+}
+
+.project-title {
+  background-color: rgb(86, 93, 43);
+  box-shadow: 2px 2px 4px black;
+  color: bisque;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  display: none;
+}
+
+.project-image {
+  box-shadow: 2px 2px 3px rgb(158, 13, 13);
+  display: inline-block;
+  box-sizing: border-box;
+  /* height: 100px; */
+}
+
+.project img {
+  image-rendering: pixelated;
+  /* height: 100px; */
+  /* width: 200px; */
+}
+
+.project-type {
+  color: rgb(206, 167, 120);
+  text-decoration: dashed;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.project-description {
+  color: bisque;
+  background: rgb(39, 63, 39);
+  box-shadow: 2px 2px 4px black;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  display: none;
+}
+
+/* 
+======================
+Cell Mockup
+======================
+*/
+
+.cell-mockup img {
+  /* height: 300px; */
+  width: 100%;
+  /* height: auto; */
+  /* height: 300px; */
+  background-size: contain;
+  object-fit: contain;
+}
+
+/* 
+======================
+Website Mockup
+======================
+*/
+
+.website-mockup {}
+
+/* Browser mockup code
+ * Contribute: https://gist.github.com/jarthod/8719db9fef8deb937f4f
+ * Live example: https://updown.io
+ */
+
+.website-mockup {
+  border-top: 2em solid rgba(230, 230, 230, 0.7);
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 3px 3px 0 0;
+}
+
+.website-mockup:before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #f44;
+  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+}
+
+.website-mockup:after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -1.6em;
+  left: 5.5em;
+  width: calc(100% - 6em);
+  height: 1.2em;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.website-mockup>* {
+  display: block;
+}
+
+/* Custom code for the demo */
+
+.browser-mockup {
+  margin: 2em;
+  flex: 1;
+}
+
+img {
+  width: 100%;
+}
+
+/* 
+===========================
+Footer
+===========================
+*/
+
+footer {
+  background: black;
+  height: 2rem;
+  color: white;
+  text-align: center;
+  /* padding: 1rem; */
+}
+
+/* 
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+} */
+`
